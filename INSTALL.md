@@ -2,7 +2,7 @@
 
 ## Recommended public path
 
-The public entrypoint should be the `mmmsearch` helper install page on `mmmbuto.com`, not a raw repo link.
+The public entrypoint should be the `mmmsearch` helper install page on `https://mmmbuto.com/?helper=1`, not a raw repo link.
 This repo remains the packaging and release source of truth.
 
 ## Current packages

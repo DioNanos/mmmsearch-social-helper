@@ -3,6 +3,7 @@
 Browser helper for `mmmsearch` that improves `Profile Scan` on difficult social platforms by using the local browser session.
 
 Current source of truth:
+- Public install hub: https://mmmbuto.com/?helper=1
 - Repo: https://github.com/DioNanos/mmmsearch-social-helper
 - Latest release: https://github.com/DioNanos/mmmsearch-social-helper/releases/latest
 
