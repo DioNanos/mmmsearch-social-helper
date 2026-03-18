@@ -14,6 +14,7 @@ Current V1 scope:
 
 Repository:
 - https://github.com/DioNanos/mmmsearch-social-helper
+- Latest release: https://github.com/DioNanos/mmmsearch-social-helper/releases/latest
 
 ## English
 
@@ -130,3 +131,9 @@ L'extension lit localement les profils publics Instagram/Facebook et n'envoie à
 Erweiterung optimiert für Chrome/Brave/Edge.
 Für beste Ergebnisse solltest du mit **deinem eigenen Konto** im Browser eingeloggt sein.
 Die Erweiterung liest öffentliche Instagram/Facebook-Profile lokal im Browser und sendet an `mmmsearch` nur die extrahierten Felder, niemals Cookies oder Zugangsdaten.
+
+
+## Install package
+
+Download the latest packaged build here:
+- https://github.com/DioNanos/mmmsearch-social-helper/releases/latest
