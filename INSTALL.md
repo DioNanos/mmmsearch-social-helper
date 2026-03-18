@@ -1,27 +1,38 @@
 # Install
 
-## Reality check
+## Recommended public path
 
-A real one-click install on Chrome/Brave/Edge requires publishing through a browser store.
-Outside the store, the easiest supported path is:
-- download the packaged zip
-- extract it
-- load it as an unpacked extension
+The public entrypoint should be the `mmmsearch` helper install page on `mmmbuto.com`, not a raw repo link.
+This repo remains the packaging and release source of truth.
 
-## Fast install
+## Current packages
 
-1. Download the latest package from Releases
-2. Extract the zip
-3. Open `chrome://extensions` or `brave://extensions`
-4. Enable `Developer mode`
-5. Click `Load unpacked`
-6. Select the extracted folder
+Latest release assets:
+- Chrome desktop beta: `mmmsearch-social-helper-chrome.zip`
+- Firefox developer package: `mmmsearch-social-helper-firefox.xpi`
 
-## Best results
+Release page:
+- https://github.com/DioNanos/mmmsearch-social-helper/releases/latest
 
-For Instagram/Facebook profile enrichment, be logged into your own account in the browser.
-The extension reads profile pages locally in your browser session and sends only extracted fields back to `mmmsearch`.
+## Browser matrix
 
-## Download
+### Chrome / Brave / Edge desktop
+- installable now
+- beta package only
+- load as unpacked extension
 
-- Latest releases: https://github.com/DioNanos/mmmsearch-social-helper/releases/latest
+### Chrome mobile
+- onboarding surface only
+- no local extension runtime on phone
+
+### Firefox desktop
+- dev package available
+- simple public install pending AMO
+
+### Firefox Android
+- target runtime supported by project direction
+- public install pending AMO
+
+### Safari iPhone / iPad / macOS
+- wrapper app required
+- channel not published yet

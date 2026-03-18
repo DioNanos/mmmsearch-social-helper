@@ -1,10 +1,11 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "MmmSearch Social Helper",
   "description": "Enriches Instagram and Facebook profile scans using the local logged-in browser session.",
   "version": "0.2.0",
-  "permissions": ["tabs", "storage"],
-  "host_permissions": [
+  "permissions": [
+    "tabs",
+    "storage",
     "https://www.instagram.com/*",
     "https://www.facebook.com/*",
     "https://m.facebook.com/*",
@@ -14,7 +15,7 @@
     "http://127.0.0.1/*"
   ],
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"]
   },
   "content_scripts": [
     {
@@ -43,11 +44,16 @@
     "48": "assets/icons/icon-48.png",
     "128": "assets/icons/icon-128.png"
   },
-  "action": {
+  "browser_action": {
     "default_title": "MmmSearch Social Helper",
     "default_icon": {
       "16": "assets/icons/icon-16.png",
       "32": "assets/icons/icon-32.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "mmmsearch-social-helper@dionanos.github.io"
     }
   }
 }

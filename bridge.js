@@ -1,5 +1,6 @@
 const PAGE_SOURCE = 'mmmsearch-page';
 const HELPER_SOURCE = 'mmmsearch-social-helper';
+const runtime = globalThis.browser?.runtime || chrome.runtime;
 
 window.addEventListener('message', (event) => {
   if (event.source !== window) return;
@@ -7,7 +8,7 @@ window.addEventListener('message', (event) => {
   if (!data || data.source !== PAGE_SOURCE || !data.type || !data.requestId) return;
 
   if (data.type === 'MMMSEARCH_SOCIAL_HELPER_PING') {
-    chrome.runtime.sendMessage({ type: 'PING' }, (payload) => {
+    runtime.sendMessage({ type: 'PING' }, (payload) => {
       window.postMessage({
         source: HELPER_SOURCE,
         requestId: data.requestId,
@@ -18,7 +19,7 @@ window.addEventListener('message', (event) => {
   }
 
   if (data.type === 'MMMSEARCH_SOCIAL_HELPER_EXTRACT') {
-    chrome.runtime.sendMessage({ type: 'EXTRACT_PROFILE', payload: data.payload || {} }, (payload) => {
+    runtime.sendMessage({ type: 'EXTRACT_PROFILE', payload: data.payload || {} }, (payload) => {
       window.postMessage({
         source: HELPER_SOURCE,
         requestId: data.requestId,
