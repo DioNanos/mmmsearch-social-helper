@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "MmmSearch Social Helper",
+  "description": "Enriches Instagram and Facebook profile scans using the local logged-in browser session.",
+  "version": "0.1.0",
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": [
+    "https://www.instagram.com/*",
+    "https://www.facebook.com/*",
+    "https://m.facebook.com/*",
+    "https://mmmbuto.com/*",
+    "https://www.mmmbuto.com/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mmmbuto.com/*",
+        "https://www.mmmbuto.com/*",
+        "http://localhost/*",
+        "http://127.0.0.1/*"
+      ],
+      "js": ["bridge.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
