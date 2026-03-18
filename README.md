@@ -10,10 +10,10 @@ Current source of truth:
 ## Status
 
 Current packaging channels:
-- Chrome / Brave / Edge desktop: beta package available now
-- Firefox desktop: developer package available now
-- Firefox Android: runtime target planned, simple install pending AMO publication
-- Safari iPhone / iPad / macOS: planned, requires Apple wrapper app
+- Chrome / Brave / Edge desktop: primary public path today
+- Chrome mobile: install/onboarding surface for desktop, not local runtime
+- Firefox desktop / Android: secondary path, AMO still pending
+- Safari iPhone / iPad / macOS: later phase, requires Apple wrapper app
 
 Supported platforms in the helper runtime today:
 - Instagram
@@ -62,9 +62,9 @@ Target behavior:
 
 ## Mobile reality
 
-- Chrome mobile: use the helper page as an install/onboarding surface, but the extension does not run locally in Chrome mobile
-- Firefox Android: intended real mobile target once AMO is ready
-- Safari iOS: intended real mobile target only after the Apple wrapper app exists
+- Chrome mobile: use the helper page as an install/onboarding surface for your desktop browser; the extension does not run locally in Chrome mobile
+- Firefox Android: secondary mobile target once AMO is ready
+- Safari iOS: later phase only after the Apple wrapper app exists
 
 ## Branding
 

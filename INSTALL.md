@@ -17,22 +17,19 @@ Release page:
 ## Browser matrix
 
 ### Chrome / Brave / Edge desktop
-- installable now
-- beta package only
+- main public path now
+- beta package available
 - load as unpacked extension
 
 ### Chrome mobile
-- onboarding surface only
+- onboarding/install surface for desktop
 - no local extension runtime on phone
 
-### Firefox desktop
-- dev package available
+### Firefox desktop / Android
+- secondary path
 - simple public install pending AMO
 
-### Firefox Android
-- target runtime supported by project direction
-- public install pending AMO
-
 ### Safari iPhone / iPad / macOS
+- later phase only
 - wrapper app required
 - channel not published yet
