@@ -83,3 +83,13 @@ Build output:
 - `dist/mmmsearch-social-helper-chrome.zip`
 - `dist/mmmsearch-social-helper-firefox.xpi`
 - versioned copies for the current tag version
+
+---
+
+## Contact
+
+Maintained by [DioNanos](https://github.com/DioNanos).
+
+- General / dev: **dev@mmmbuto.com**
+- Security disclosures: **security@mmmbuto.com**
+- Project hub: <https://mmmbuto.com>
